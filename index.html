@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuôi Tôi Đi! - Feed Me 🥺</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍜%3C/text%3E%3C/svg%3E">
+
+    <meta property="og:title" content="Nuôi Tôi Đi! - Donate For Me" />
+    <meta property="og:description" content="Trang web xin tài trợ mì tôm và trà đá. Uy tín 100%." />
+    <meta property="og:image" content="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Poverty" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#FF6B6B',
+              accent: '#4ECDC4',
+              dark: '#2d3436',
+            },
+            fontFamily: {
+              'hand': ['"Patrick Hand"', 'cursive'],
+              'sans': ['"Nunito"', 'sans-serif'],
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      body {
+        background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);
+        min-height: 100vh;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+      }
+
+      /* Loading Animation Styles */
+      .loading-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        color: #FF6B6B;
+        font-family: 'Patrick Hand', cursive;
+        font-size: 1.5rem;
+      }
+      
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      
+      .floating-logo {
+        animation: float 2s ease-in-out infinite;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.3);
+      }
+      
+      @media (max-width: 768px) {
+        ::-webkit-scrollbar { width: 0px; background: transparent; }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CX1vaW8p.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading-container">
+        <svg class="floating-logo" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+           <path d="M3 14h18" />
+           <path d="M4 14a8 8 0 0 0 16 0" />
+           <path d="M12 7v4" />
+           <path d="M8 7v4" />
+           <path d="M16 7v4" />
+           <path d="M12 3v1" />
+           <path d="M8 3v1" />
+           <path d="M16 3v1" />
+        </svg>
+        <p style="margin-top: 20px;">Đang hâm nóng mì tôm...</p>
+      </div>
+    </div>
+    
+  </body>
+</html>
